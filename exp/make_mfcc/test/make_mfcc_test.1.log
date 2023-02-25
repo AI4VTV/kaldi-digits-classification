@@ -1,0 +1,20 @@
+# compute-mfcc-feats --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- | copy-feats --compress=true ark:- ark,scp:/opt/kaldi/kaldi/egs/digits/mfcc/raw_mfcc_test.1.ark,/opt/kaldi/kaldi/egs/digits/mfcc/raw_mfcc_test.1.scp 
+# Started at Sat Feb 25 12:25:25 UTC 2023
+#
+/opt/kaldi/kaldi/egs/digits/../../src/featbin/copy-feats --compress=true ark:- ark,scp:/opt/kaldi/kaldi/egs/digits/mfcc/raw_mfcc_test.1.ark,/opt/kaldi/kaldi/egs/digits/mfcc/raw_mfcc_test.1.scp 
+/opt/kaldi/kaldi/egs/digits/../../src/featbin/compute-mfcc-feats --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:182) Processed features for key sung_test_utteranceID_0_9_8
+VLOG[2] (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:182) Processed features for key sung_test_utteranceID_1_0_9
+VLOG[2] (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:182) Processed features for key sung_test_utteranceID_2_1_0
+VLOG[2] (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:182) Processed features for key sung_test_utteranceID_3_2_1
+VLOG[2] (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:182) Processed features for key sung_test_utteranceID_4_3_2
+VLOG[2] (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:182) Processed features for key sung_test_utteranceID_5_4_3
+VLOG[2] (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:182) Processed features for key sung_test_utteranceID_6_5_4
+VLOG[2] (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:182) Processed features for key sung_test_utteranceID_7_6_5
+VLOG[2] (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:182) Processed features for key sung_test_utteranceID_8_7_6
+LOG (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:182) Processed features for key sung_test_utteranceID_9_8_7
+LOG (compute-mfcc-feats[5.5.1013~1-d787]:main():compute-mfcc-feats.cc:185)  Done 10 out of 10 utterances.
+LOG (copy-feats[5.5.1013~1-d787]:main():copy-feats.cc:143) Copied 10 feature matrices.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sat Feb 25 12:25:26 UTC 2023, elapsed time 1 seconds

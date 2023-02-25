@@ -1,0 +1,2 @@
+/opt/kaldi/kaldi/egs/digits/../../src/bin/sum-tree-stats exp/tri1/treeacc exp/tri1/1.treeacc 
+LOG (sum-tree-stats[5.5.1013~1-d787]:main():sum-tree-stats.cc:88) Wrote summed accs ( 176 individual stats)
